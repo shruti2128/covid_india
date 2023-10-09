@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Zones
+{% endblock %}
+
+{% block main %}
+    <h4 >{{state}}</h4>
+    <table class="center">
+        <thead>
+            <tr>
+                <th>DISTRICT</th>
+                <th>ZONE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in r %}
+             <tr>
+                 <td>{{i["district"]}}</td>
+                 <td>{{i["zone"]}}</td>
+             </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

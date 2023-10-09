@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tests
+{% endblock %}
+
+{% block main %}
+     <h4 >{{state}}</h4>
+     <p>DAILY TESTED: {{r['dailytested']}}</p>
+     <p>TOTAL TESTED: {{r['totaltested']}}</p>
+     <p>TOTAL POSITIVITY RATE: {{r['testpositivityrate']}}</p>
+     <p>TOTAL POSITIVE CASES: {{r['totalpositivecases']}}</p>
+{% endblock %}  
